@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ez Grill Halal Food | Halal Grill • Arlington, Jacksonville</title>
+<meta name="description" content="Halal wraps, rice platters, wing-dings and burger combos on Arlington Rd, Jacksonville. Call (904) 727-9307.">
+<meta name="theme-color" content="#222222">
+<style>
+:root{--green:#1f7a3a;--green2:#2fa152;--char:#222;--red:#d62828;--paper:#fafaf7;--line:#e6e6e0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--paper);color:var(--char);line-height:1.5;padding-bottom:76px}
+.check{height:18px;background:conic-gradient(var(--char) 25%,#fff 0 50%,var(--char) 0 75%,#fff 0) 0 0/18px 18px}
+header{background:var(--char);color:#fff;padding:.8rem 1.2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-weight:900;font-size:1.35rem;letter-spacing:-.5px;display:flex;align-items:center;gap:.5rem}
+.logo i{font-style:normal;background:var(--red);padding:.05rem .45rem;border-radius:4px;transform:rotate(-4deg);display:inline-block}
+.logo small{font-size:.65rem;letter-spacing:2px;color:#9fd8ad;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin-left:1.1rem;font-size:.92rem;font-weight:600}nav a:hover{color:#9fd8ad}
+.hero{background:var(--char);color:#fff;position:relative;overflow:hidden;padding:2.6rem 1.3rem 2.4rem}
+.hero:before{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;background:conic-gradient(#ffffff14 25%,transparent 0 50%,#ffffff14 0 75%,transparent 0) 0 0/40px 40px;transform:rotate(12deg)}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.seal{display:inline-flex;align-items:center;gap:.5rem;border:2px solid var(--green2);color:#bff0cb;border-radius:999px;padding:.3rem .85rem .3rem .35rem;font-weight:800;font-size:.8rem;letter-spacing:1.5px;margin-bottom:1rem}
+.seal b{background:var(--green);color:#fff;border-radius:999px;width:28px;height:28px;display:grid;place-items:center;font-size:.95rem;letter-spacing:0}
+.hero h2{font-size:clamp(2.4rem,9vw,4.2rem);line-height:.95;font-weight:900;letter-spacing:-1.5px;text-transform:uppercase}
+.hero h2 span{color:var(--red)}
+.hero h2 em{font-style:normal;color:#9fd8ad}
+.hero p{margin-top:1rem;font-size:1.05rem;color:#ddd;max-width:30rem}
+.cta{display:flex;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.2rem;border-radius:8px;font-weight:800;text-decoration:none;font-size:.98rem}
+.btn.red{background:var(--red);color:#fff}.btn.ghost{border:2px solid #fff;color:#fff}.btn.green{background:var(--green);color:#fff}
+.shopfront{background:#fff;padding:8px 8px 0;border-radius:6px;transform:rotate(2deg);box-shadow:0 18px 40px #0008;max-width:420px;justify-self:end}
+.shopfront img{width:100%;height:auto;display:block;border-radius:3px}
+.shopfront figcaption{font-size:.75rem;color:#666;padding:.45rem .2rem .55rem;text-align:center;font-weight:600}
+.strip{background:var(--green);color:#fff;display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;padding:.85rem 1rem;font-weight:800;font-size:.9rem;letter-spacing:.5px}
+.strip span:before{content:"✓ ";color:#bff0cb}
+section{padding:3.2rem 1.2rem;max-width:1100px;margin:0 auto}
+h3{font-size:2rem;font-weight:900;text-transform:uppercase;letter-spacing:-.5px;margin-bottom:.4rem;text-align:center}
+.sub{text-align:center;color:#666;margin-bottom:1.6rem}
+.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:.4rem;margin-bottom:1.3rem;justify-content:center;flex-wrap:wrap}
+.filters button{padding:9px 16px;border:2px solid var(--char);background:#fff;border-radius:999px;cursor:pointer;font-weight:800;color:var(--char);white-space:nowrap;font-size:.88rem}
+.filters button.active{background:var(--char);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:#fff;border:2px solid var(--char);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;display:flex;flex-direction:column}
+.card:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--char)}
+.card img{width:100%;height:200px;object-fit:cover;display:block}
+.ph{height:110px;display:grid;place-items:center;font-size:2.6rem;background:conic-gradient(#eee 25%,#fff 0 50%,#eee 0 75%,#fff 0) 0 0/22px 22px;border-bottom:2px solid var(--char)}
+.ph b{background:#fff;border:2px solid var(--char);border-radius:999px;width:74px;height:74px;display:grid;place-items:center}
+.card-body{padding:1rem 1.1rem 1.1rem;flex:1}
+.card h4{font-size:1.12rem;font-weight:900}
+.card p{font-size:.93rem;color:#444}
+.price{color:var(--red)!important;font-weight:900;font-size:1.05rem!important;margin-top:.45rem}
+.more{display:none;margin-top:.6rem;font-size:.88rem;background:#f3f6f3;border-left:4px solid var(--green);padding:.55rem .7rem;border-radius:4px}
+.card.open .more{display:block}
+.tap{font-size:.72rem;color:#999;margin-top:.5rem;text-transform:uppercase;letter-spacing:1px}
+.card.open .tap{display:none}
+.wings{display:grid;grid-template-columns:1fr 1fr;background:var(--char);color:#fff;border-radius:16px;overflow:hidden}
+.wings img{width:100%;height:100%;object-fit:cover;min-height:280px}
+.wings>div{padding:2rem}
+.wings h3{text-align:left;color:#fff}
+.sizes{display:flex;gap:.8rem;margin:1.2rem 0}
+.size{flex:1;border:2px solid #fff;border-radius:10px;padding:.8rem;text-align:center}
+.size b{display:block;font-size:2rem;line-height:1}
+.size span{color:#ff7b7b;font-weight:900}
+.sauces{display:flex;gap:6px;flex-wrap:wrap;margin-top:.6rem}
+.sauces i{font-style:normal;width:30px;height:30px;border-radius:50%;border:2px solid #fff;display:grid;place-items:center;font-weight:900;font-size:.8rem}
+.halal{display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:center;background:#fff;border:2px solid var(--green);border-radius:16px;padding:1.6rem}
+.halal .big{width:110px;height:110px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1.05;font-size:.9rem;letter-spacing:1px;box-shadow:0 0 0 6px #fff,0 0 0 8px var(--green)}
+.halal .big b{font-size:1.7rem;display:block}
+.halal h3{text-align:left;font-size:1.5rem;color:var(--green)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;border:2px solid var(--char)}
+.gallery img.wide{grid-column:span 2}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.info-box{background:#fff;border:2px solid var(--char);border-radius:12px;padding:1.3rem}
+.info-box strong{display:block;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin-bottom:.5rem;color:var(--red)}
+.info-box table{width:100%;font-size:.95rem;border-collapse:collapse}
+.info-box td{padding:3px 0}.info-box td+td{text-align:right}
+.info-box tr.today{font-weight:900;background:#f3f6f3}
+#status{display:inline-block;margin-top:.7rem;font-weight:900;padding:.3rem .7rem;border-radius:999px;color:#fff;font-size:.9rem}
+.call-bar{position:fixed;bottom:0;left:0;right:0;background:var(--red);text-align:center;padding:14px 20px;z-index:200;box-shadow:0 -4px 14px #0004}
+.call-bar a{color:#fff;text-decoration:none;font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+footer{background:var(--char);color:#bbb;text-align:center;padding:2rem 1rem;font-size:.88rem}
+@media(max-width:760px){
+ nav{display:none}
+ .hero-inner,.wings,.info-grid{grid-template-columns:1fr}
+ .shopfront{justify-self:center;margin-top:.4rem;max-width:340px}
+ .halal{grid-template-columns:1fr;text-align:center;justify-items:center}.halal h3{text-align:center}
+ .gallery{grid-template-columns:1fr 1fr}.gallery img{height:160px}.gallery img.wide{grid-column:span 2}
+ .wings img{min-height:220px;max-height:260px}
+ .strip{gap:.4rem 1rem;font-size:.8rem}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i>EZ</i> GRILL <small>HALAL FOOD</small></div>
+  <nav><a href="#menu">Menu</a><a href="#wings">Wing-Dings</a><a href="#visit">Visit</a></nav>
+</header>
+<div class="check"></div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="seal"><b>✓</b> HALAL GRILL</div>
+      <h2>Wraps.<br><em>Platters.</em><br><span>Wings.</span></h2>
+      <p>Shawarma, gyro, kebab platters and wing-dings on Arlington Rd. Skip the delivery-app markup and call it in.</p>
+      <div class="cta">
+        <a class="btn red" href="tel:9047279307">Call to Order</a>
+        <a class="btn ghost" href="#menu">See the Menu</a>
+      </div>
+    </div>
+    <figure class="shopfront">
+      <img src="images/hero.jpg" alt="Ez Grill Halal Food storefront on Arlington Rd" width="800" height="389">
+      <figcaption>6675 Arlington Rd • Jacksonville</figcaption>
+    </figure>
+  </div>
+</div>
+<div class="strip"><span>HALAL</span><span>WRAPS &amp; PLATTERS</span><span>WING-DINGS</span><span>OPEN 7 DAYS</span></div>
+
+<section id="menu">
+  <h3>The Menu</h3>
+  <p class="sub">Tap any item for details. Prices from the shop's current menu.</p>
+  <div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="platter">Rice Platters</button>
+    <button data-filter="wrap">Wraps &amp; Subs</button>
+    <button data-filter="wings">Wing-Dings</button>
+    <button data-filter="combo">Burgers &amp; Salads</button>
+  </div>
+  <div class="grid" id="menu-grid">
+    <div class="card" data-cat="platter" onclick="this.classList.toggle('open')">
+      <img src="images/chicken-kebab.jpg" alt="Chicken shish-kabob over rice with salad" loading="lazy" style="object-position:center 60%">
+      <div class="card-body"><h4>Chicken Shish-Kabob Platter</h4><p>Grilled skewers over seasoned rice with fresh salad.</p><p class="price">Platters $10.39 – $13.99</p>
+      <div class="more">Rice platters come as grilled chicken, steak, chicken shish-kabob or wings with rice. Call for today's prices.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="platter" onclick="this.classList.toggle('open')">
+      <img src="images/platter.jpg" alt="Ez Grill platter with sauce in a takeout box" loading="lazy">
+      <div class="card-body"><h4>Grilled Chicken or Steak Platter</h4><p>Hot off the grill over rice, packed to go.</p><p class="price">$10.39 – $13.99</p>
+      <div class="more">Choose grilled chicken or steak. A filling lunch that travels well.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="wrap" onclick="this.classList.toggle('open')">
+      <div class="ph"><b>🌯</b></div>
+      <div class="card-body"><h4>Shawarma &amp; Gyro Wraps</h4><p>Halal shawarma or gyro, wrapped warm.</p><p class="price">Wraps &amp; subs $10.39 – $12.99</p>
+      <div class="more">Wraps and subs include shawarma, gyro, Philly and fish sub.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="wrap" onclick="this.classList.toggle('open')">
+      <div class="ph"><b>🥖</b></div>
+      <div class="card-body"><h4>Philly &amp; Fish Subs</h4><p>Halal Philly or a fish sub, made to order.</p><p class="price">$10.39 – $12.99</p>
+      <div class="more">Ask about sides and drinks when you call.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="wings" onclick="this.classList.toggle('open')">
+      <img src="images/wings.jpg" alt="Ez Grill wing-dings with fries" loading="lazy">
+      <div class="card-body"><h4>Wing-Dings</h4><p>Crispy wings tossed in your pick of 7 sauces.</p><p class="price">12 for $16.99 • 18 for $22.99</p>
+      <div class="more">Seven sauces to choose from. Call to hear today's lineup.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="combo" onclick="this.classList.toggle('open')">
+      <div class="ph"><b>🍔</b></div>
+      <div class="card-body"><h4>Halal Burger Combo</h4><p>A halal burger made into a combo.</p><p class="price">$9.99</p>
+      <div class="more">The best-value lunch on the board.</div><p class="tap">Tap for details</p></div></div>
+    <div class="card" data-cat="combo" onclick="this.classList.toggle('open')">
+      <div class="ph"><b>🥗</b></div>
+      <div class="card-body"><h4>Salads</h4><p>Fresh salads for a lighter meal.</p><p class="price">$11.49</p>
+      <div class="more">Call to ask about today's salad options.</div><p class="tap">Tap for details</p></div></div>
+  </div>
+</section>
+
+<section id="wings">
+  <div class="wings">
+    <img src="images/wings.jpg" alt="Wing-dings and fries at Ez Grill" loading="lazy">
+    <div>
+      <h3>Wing-Dings</h3>
+      <p>Pick a size, pick a sauce. Seven ways to sauce them.</p>
+      <div class="sizes">
+        <div class="size"><b>12</b><span>$16.99</span></div>
+        <div class="size"><b>18</b><span>$22.99</span></div>
+      </div>
+      <div class="sauces" aria-label="7 sauces"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></div>
+      <p style="margin-top:1.2rem"><a class="btn red" href="tel:9047279307">Call in a wing order</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="halal">
+    <div class="big"><span><b>✓</b>HALAL</span></div>
+    <div>
+      <h3>Halal is in the name</h3>
+      <p>Halal wraps, platters, burgers and wings in one spot on Arlington Rd. Questions about the menu? Call and ask. The shop will tell you exactly what's on the grill.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Inside Ez Grill</h3>
+  <p class="sub">Real photos from the shop.</p>
+  <div class="gallery">
+    <img class="wide" src="images/menu-board.jpg" alt="Ez Grill menu board over the counter" loading="lazy">
+    <img src="images/chicken-kebab.jpg" alt="Chicken kebab platter" loading="lazy">
+    <img src="images/about.jpg" alt="Ez Grill order counter" loading="lazy">
+    <img src="images/platter.jpg" alt="Platter to go" loading="lazy">
+    <img src="images/wings.jpg" alt="Wings and fries" loading="lazy">
+  </div>
+</section>
+
+<section id="visit">
+  <h3>Visit &amp; Order</h3>
+  <p class="sub">Call ahead and it's ready when you walk in.</p>
+  <div class="info-grid">
+    <div class="info-box"><strong>Hours</strong>
+      <table id="hours">
+        <tr data-d="1"><td>Monday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="2"><td>Tuesday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="3"><td>Wednesday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="4"><td>Thursday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="5"><td>Friday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="6"><td>Saturday</td><td>10 AM – 8 PM</td></tr>
+        <tr data-d="0"><td>Sunday</td><td>10 AM – 3 PM</td></tr>
+      </table>
+      <span id="status"></span>
+    </div>
+    <div class="info-box"><strong>Location</strong>
+      Ez Grill Halal Food<br>6675 Arlington Rd #5413<br>Jacksonville, FL 32211<br>
+      <div class="cta"><a class="btn green" href="https://www.google.com/maps/search/?api=1&query=Ez+Grill+Halal+Food+6675+Arlington+Rd+Jacksonville+FL+32211" target="_blank" rel="noopener">Get Directions</a></div>
+    </div>
+    <div class="info-box"><strong>Order Ahead</strong>
+      Call your order in and skip the wait.<br>
+      <div class="cta"><a class="btn red" href="tel:9047279307">(904) 727-9307</a></div>
+    </div>
+    <div class="info-box"><strong>Find Us Online</strong>
+      <p style="font-size:.95rem">Photos and updates on Facebook and Yelp.</p>
+      <div class="cta"><a class="btn ghost" style="color:var(--char);border-color:var(--char)" href="https://www.facebook.com/p/EZ-Grill-100054375047166/" target="_blank" rel="noopener">Facebook</a><a class="btn ghost" style="color:var(--char);border-color:var(--char)" href="https://www.yelp.com/biz/e-z-grill-jacksonville" target="_blank" rel="noopener">Yelp</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="check"></div>
+<footer>
+  <p><b style="color:#fff">Ez Grill Halal Food</b> • 6675 Arlington Rd #5413, Jacksonville, FL 32211 • (904) 727-9307</p>
+  <p style="margin-top:.4rem">Mock site for demonstration • Not the official website</p>
+  <p style="margin-top:.4rem;font-size:.78rem;opacity:.7">Photos: real photos of Ez Grill from public listings. See SOURCES.md.</p>
+</footer>
+
+<div class="call-bar"><a href="tel:9047279307">📞 Call Now • (904) 727-9307</a></div>
+
+<script>
+document.querySelectorAll('.filters button').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const f=btn.dataset.filter;document.querySelectorAll('#menu-grid .card').forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none');}));
+(function(){const H={0:[10,15],1:[10,20],2:[10,20],3:[10,20],4:[10,20],5:[10,20],6:[10,20]};
+ const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));const d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+ const row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+ const s=document.getElementById('status'),r=H[d];
+ if(r&&h>=r[0]&&h<r[1]){s.textContent='● Open now';s.style.background='#1f7a3a'}else{s.textContent='● Closed now';s.style.background='#d62828'}})();
+</script>
+</body>
+</html>
